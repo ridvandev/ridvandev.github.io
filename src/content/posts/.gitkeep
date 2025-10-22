@@ -1,0 +1,11 @@
+# This directory contains your blog posts
+
+# Create your first post by running:
+# npm run new
+
+# Or manually create a .md or .mdx file here with frontmatter:
+# ---
+# title: 'Your Post Title'
+# pubDate: '2025-10-22'
+# ---
+# Your content here...

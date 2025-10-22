@@ -1,0 +1,66 @@
+---
+import { themeConfig } from '@/config'
+const today = new Date()
+---
+
+<footer>
+  <div class="footer-content">
+    <div class="copyright">
+      <span class="date">
+        &copy;
+        {today.getFullYear()}
+      </span>
+      {themeConfig.site.author}
+    </div>
+    <div class="social-links">
+      <a href="https://github.com/ridvandev" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <span class="separator">•</span>
+      <a href="https://linkedin.com/in/ridvancanturk/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      <span class="separator">•</span>
+      <a href="https://instagram.com/ridvancanturk" target="_blank" rel="noopener noreferrer">Instagram</a>
+    </div>
+  </div>
+</footer>
+<style>
+  footer {
+    font-size: var(--font-size-s);
+    font-weight: var(--font-weight-light);
+    line-height: 1.75;
+    color: var(--text-secondary);
+    opacity: 0.75;
+    margin-top: 4rem;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+  }
+
+  .copyright,
+  .social-links {
+    white-space: nowrap;
+  }
+
+  .copyright .date {
+    opacity: 1;
+  }
+
+  .social-links .separator {
+    margin: 0 0.5rem;
+    opacity: 0.5;
+  }
+
+  footer a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: color 0.2s ease-out;
+  }
+
+  footer a:hover {
+    color: var(--text-primary);
+  }
+</style>
